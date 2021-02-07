@@ -27,9 +27,16 @@ Sample Output
 1 W 2 R 3g
 """
 def solve(s):
-    for i in s.split():
+    '''for i in s.split():
         s = s.replace(i,i.capitalize())
-    return s
+    return s'''
+
+''' Another method can be'''
+     s=s.split(' ')
+    for i in range(len(s)):
+        s[i]=s[i].capitalize()
+    s=' '.join(s) 
+    print(s)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w'
